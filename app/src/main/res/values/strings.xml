@@ -2,4 +2,6 @@
     <string name="app_name">ContactApp</string>
     <string name="update">Update</string>
     <string name="delete">Delete</string>
+    <string name="Night_Mode">Night_Mode</string>
+    <string name="Day_Mode">Day_Mode</string>
 </resources>
