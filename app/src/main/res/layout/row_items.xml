@@ -1,41 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    app:cardBackgroundColor="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:layout_margin="5dp"
-    app:cardCornerRadius="2dp"
-    android:layout_height="wrap_content">
-    
+    android:orientation="vertical"
+    app:cardCornerRadius="15dp"
+
+
+    >
+
     <RelativeLayout
+
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="#d2d9c5">
 
 
-    <TextView
-        android:id="@+id/tvName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Username"
-        android:textColor="#000"
-        android:padding="10dp"
-        android:textSize="16sp"/>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_margin="5dp"
-        android:foregroundGravity="center"
-        android:padding="10dp"
-        android:src="@drawable/ic_baseline_more_vert_24"
-        android:id="@+id/imageOptions"/>
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="username" />
+
+        <ImageView
+            android:id="@+id/imageOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            android:foregroundGravity="center"
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_more_vert_24" />
 
     </RelativeLayout>
-
-
-
-
 
 
 </androidx.cardview.widget.CardView>
