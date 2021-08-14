@@ -1,35 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="10dp"
-    android:layout_centerHorizontal="true"
-    android:text="Add contact"
-    android:textSize="12sp"
-    android:id="@+id/tvDetails"/>
+
+    <Button
+        android:id="@+id/addUserBtn"
+        style="@style/Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edUser"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edUser" />
 
     <EditText
         android:id="@+id/edUser"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
         android:layout_below="@id/tvDetails"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="21dp"
         android:hint="Name/PhoneNo"
-        />
+        app:layout_constraintBottom_toTopOf="@+id/addUserBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetails" />
 
-    <Button
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/tvDetails"
+        style="@style/TextView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/black"
-        android:id="@+id/addUserBtn"
-        android:layout_margin="13dp"
-        android:text="Add"
-        android:textColor="@color/white"
-        android:layout_below="@id/edUser"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="151dp"
 
-</RelativeLayout>
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/edUser"
+        app:layout_constraintEnd_toEndOf="@+id/edUser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
